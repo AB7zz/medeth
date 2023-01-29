@@ -1,11 +1,10 @@
 import React from 'react'
-import {DataContext} from '../../../DataContext'
+import Sidebar from '../Sidebar/Sidebar'
 
 const Home = () => {
-    const { web3Handler, account } = React.useContext(DataContext)
     return (
     <>    
-        {account ? <button href="/profile">{account}</button> : <button onClick={web3Handler}>Login</button>}     
+        <Sidebar/>
     </> 
     )
 }
