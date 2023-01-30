@@ -23,7 +23,7 @@ const AppDetail = () => {
             <Prescriptions appointment={appointment} style={{ flex: 1 }} />
           </>
         ) : (
-          <p>adsfas</p>
+          <p>Patient detail not found</p>
         )}
       </div>
     </div>
