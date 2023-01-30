@@ -9,6 +9,7 @@ import Search from './components/Doctors/Search/Search';
 import Appointments from './components/Doctors/Appointments/Appointments';
 import AppDetail from './components/Doctors/AppDetail/AppDetail';
 import Upload from './components/Doctors/Upload/Upload';
+import Settings from './components/Doctors/Settings/Settings';
 
 // import {Home as PatHome} from './components/Patients/Home/Home'
 // import {Login as PatLogin} from './components/Patients/Login/Login'
@@ -27,6 +28,7 @@ function App() {
         <Route path="/doctor/search" element={<Search />} />
         <Route path="/doctor/appointment/:id" element={<AppDetail />} />
         <Route path="/doctor/upload" element={<Upload />} />
+        <Route path="/doctor/settings" element={<Settings/>} />
 
         {/* <Route path="/patient/home" element={<PatHome />} />
         <Route path="/patient/login" element={<PatLogin />} />

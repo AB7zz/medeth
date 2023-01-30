@@ -2,8 +2,8 @@
     {
         "name": "Abhinav C V",
         "doctorName": "Dr. John Doe",
-        "description": "adsa",
         "doctorType": "Gyno",
+        "description": "adsa",
         "medications": [
             {
                 "name": "Paracetamol",
