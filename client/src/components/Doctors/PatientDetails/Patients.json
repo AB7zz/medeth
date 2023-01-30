@@ -1,0 +1,65 @@
+[
+    {
+            "name": "Abhinav C V",
+            "sex": "M",
+            "age": "19",
+            "medications": [
+                {
+                    "name": "lol",
+                    "dosage": "lol2",
+                    "frequency": "lol3"
+                },
+                {
+                    "name": "lol2",
+                    "dosage": "lol2",
+                    "frequency": "lol3"
+                }
+            ],
+            "allergies": [{
+                "name": "okay",
+                "reactions": "okay2"
+            }]
+    },
+    {
+        "name": "Abhinav M R",
+        "sex": "M",
+        "age": "19",
+        "medications": [
+            {
+                "name": "lol",
+                "dosage": "lol2",
+                "frequency": "lol3"
+            },
+            {
+                "name": "lol2",
+                "dosage": "lol2",
+                "frequency": "lol3"
+            }
+        ],
+        "allergies": [{
+            "name": "okay",
+            "reactions": "okay2"
+        }]
+    },
+    {
+        "name": "Alosh",
+        "sex": "M",
+        "age": "19",
+        "medications": [
+            {
+                "name": "lol",
+                "dosage": "lol2",
+                "frequency": "lol3"
+            },
+            {
+                "name": "lol2",
+                "dosage": "lol2",
+                "frequency": "lol3"
+            }
+        ],
+        "allergies": [{
+            "name": "okay",
+            "reactions": "okay2"
+        }]
+    }
+]
