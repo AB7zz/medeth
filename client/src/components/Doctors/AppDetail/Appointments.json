@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Abhinav C V",
+        "doctorName": "Dr. John Doe",
+        "description": "adsa",
+        "doctorType": "Gyno",
+        "medications": [
+            {
+                "name": "Paracetamol",
+                "dosage": "500mg",
+                "frequency": "three times a day"
+            },
+            {
+                "name": "Aspirin",
+                "dosage": "100mg",
+                "frequency": "twice a day"
+            },
+            {
+                "name": "Ibuprofen",
+                "dosage": "200mg",
+                "frequency": "four times a day"
+            }
+        ],
+        "allergies": [
+            {
+                "substance": "Sulfa drugs",
+                "reaction": "Nausea"
+            },
+            {
+                "substance": "Penicillin",
+                "reaction": "Rash"
+            },
+            {
+                "substance": "Bee strings",
+                "reaction": "Anaphylaxis"
+            }
+        ],
+        "prescriptions": [
+            {
+                "name": "Aspirin",
+                "dosage": "100mg",
+                "frequency": "twice a day"
+            },
+            {
+                "name": "Paracetamol",
+                "dosage": "500mg",
+                "frequency": "three times a day"
+            },
+            {
+                "name": "Ibuprofen",
+                "dosage": "200mg",
+                "frequency": "four times a day"
+            }
+        ],
+        "notes": "No notes"
+    }
+]

@@ -1,65 +1,150 @@
 [
     {
-            "name": "Abhinav C V",
-            "sex": "M",
-            "age": "19",
-            "medications": [
-                {
-                    "name": "lol",
-                    "dosage": "lol2",
-                    "frequency": "lol3"
-                },
-                {
-                    "name": "lol2",
-                    "dosage": "lol2",
-                    "frequency": "lol3"
-                }
-            ],
-            "allergies": [{
-                "name": "okay",
-                "reactions": "okay2"
-            }]
-    },
-    {
-        "name": "Abhinav M R",
+        "name": "Abhinav C V",
         "sex": "M",
         "age": "19",
+        "phoneNo": "+919778393558",
+        "place": "Kochi",
+        "insurance": "Yes",
+        "bloodGroup": "O+",
         "medications": [
             {
-                "name": "lol",
-                "dosage": "lol2",
-                "frequency": "lol3"
+                "name": "Aspirin",
+                "dosage": "100mg",
+                "frequency": "twice a day"
             },
             {
-                "name": "lol2",
-                "dosage": "lol2",
-                "frequency": "lol3"
+                "name": "Paracetamol",
+                "dosage": "500mg",
+                "frequency": "three times a day"
+            },
+            {
+                "name": "Ibuprofen",
+                "dosage": "200mg",
+                "frequency": "four times a day"
             }
         ],
-        "allergies": [{
-            "name": "okay",
-            "reactions": "okay2"
-        }]
+        "allergies": [
+            {
+                "substance": "Penicillin",
+                "reaction": "Rash"
+            },
+            {
+                "substance": "Sulfa drugs",
+                "reaction": "Nausea"
+            },
+            {
+                "substance": "Bee strings",
+                "reaction": "Anaphylaxis"
+            }
+        ],
+        "appointments": [
+            {
+                "date": "01-01-2022",
+                "time": "10:00 AM",
+                "with": "Dr. John Doe"
+            },
+            {
+                "date": "03-01-2022",
+                "time": "11:00 AM",
+                "with": "Dr. Jane Doe"
+            },
+            {
+                "date": "01-01-2022",
+                "time": "12:00 AM",
+                "with": "Dr. Bob Smith"
+            }
+        ],
+        "prescriptions": [
+            {
+                "name": "Aspirin",
+                "dosage": "100mg",
+                "frequency": "twice a day"
+            },
+            {
+                "name": "Paracetamol",
+                "dosage": "500mg",
+                "frequency": "three times a day"
+            },
+            {
+                "name": "Ibuprofen",
+                "dosage": "200mg",
+                "frequency": "four times a day"
+            }
+        ]
     },
     {
         "name": "Alosh",
         "sex": "M",
-        "age": "19",
+        "age": "20",
+        "phoneNo": "+919778393558",
+        "place": "Kochi",
+        "insurance": "Yes",
+        "bloodGroup": "O+",
         "medications": [
             {
-                "name": "lol",
-                "dosage": "lol2",
-                "frequency": "lol3"
+                "name": "Paracetamol",
+                "dosage": "500mg",
+                "frequency": "three times a day"
             },
             {
-                "name": "lol2",
-                "dosage": "lol2",
-                "frequency": "lol3"
+                "name": "Aspirin",
+                "dosage": "100mg",
+                "frequency": "twice a day"
+            },
+            {
+                "name": "Ibuprofen",
+                "dosage": "200mg",
+                "frequency": "four times a day"
             }
         ],
-        "allergies": [{
-            "name": "okay",
-            "reactions": "okay2"
-        }]
+        "allergies": [
+            {
+                "substance": "Sulfa drugs",
+                "reaction": "Nausea"
+            },
+            {
+                "substance": "Penicillin",
+                "reaction": "Rash"
+            },
+            {
+                "substance": "Bee strings",
+                "reaction": "Anaphylaxis"
+            }
+        ],
+        "appointments": [
+            {
+                "date": "01-01-2022",
+                "time": "10:00 AM",
+                "with": "Dr. Jane Doe"
+            },
+            {
+                "date": "03-01-2022",
+                "time": "11:00 AM",
+                "with": "Dr. John Doe"
+            },
+            {
+                "date": "01-01-2022",
+                "time": "12:00 AM",
+                "with": "Dr. Bob Smith"
+            }
+        ],
+        "prescriptions": [
+            {
+                "name": "Aspirin",
+                "dosage": "100mg",
+                "frequency": "twice a day"
+            },
+            {
+                "name": "Paracetamol",
+                "dosage": "500mg",
+                "frequency": "three times a day"
+            },
+            {
+                "name": "Ibuprofen",
+                "dosage": "200mg",
+                "frequency": "four times a day"
+            }
+        ]
     }
 ]
