@@ -1,5 +1,4 @@
 import React from 'react'
-import Sidebar from '../Sidebar/Sidebar'
 import Medications from './Medications/Medications'
 import PatientBio from './PatientBio/PatientBio'
 import PrevAppointments from './PrevAppointments/PrevAppointments'
