@@ -5,8 +5,8 @@ import FormCard from './FormCard'
 const Upload = () => {
   return (
     <div style={{ display: 'flex'}}>
-    <Sidebar style={{ flex: 1 }}/>
-    <FormCard style={{ flex: 1 }}/>
+      <Sidebar style={{ flex: 1 }}/>
+      <FormCard style={{ flex: 1 }}/>
     </div>
   )
 }

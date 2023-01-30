@@ -7,11 +7,11 @@ import PastAppointments from './PastAppointments/PastAppointments'
 
 const Appointments = () => {
   return (
-    <div style={{ display: 'flex'}}>
-    <Sidebar style={{ flex: 1 }} />
-    <PastAppointments style={{ flex: 1 }} />
-    <NewAppointments style={{ flex: 1 }} />
-    <CurrentAppointments style={{ flex: 1 }} />
+    <div className='h-screen' style={{ display: 'flex'}}>
+      <Sidebar style={{ flex: 1 }} />
+      <PastAppointments style={{ flex: 1 }} />
+      <NewAppointments style={{ flex: 1 }} />
+      <CurrentAppointments style={{ flex: 1 }} />
     </div>
   )
 }

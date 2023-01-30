@@ -2,61 +2,51 @@ import React, { useState } from 'react';
 
 const FormCard = () => {
     const [patient, setPatient] = useState({
+      address: '',
       name: '',
       doctor: '',
       doctorType: '',
       description: '',
-      medications: [{ medicationName: '', dosage: '', frequency: '' }],
-      allergies: '',
-      prescriptions: '',
       notes: '',
     });
-    const [medications, setMedications] = useState([{ medicationName: '', dosage: '', frequency: '' }]);
+    const [medications, setMedications] = useState([{ name: '', dosage: '', frequency: '' }]);
+    const [allergies, setAllergy] = useState([{ substance: '', reaction: '' }]);
+    const [prescriptions, setPrescriptions] = useState([{ name: '', dosage: '', frequency: '' }]);
   
     const handleChange = (e) => {
       setPatient({ ...patient, [e.target.name]: e.target.value });
     };
   
-    const handleMedicationChange = (e, index) => {
-      const updatedMedications = [...medications];
-      updatedMedications[index][e.target.name] = e.target.value;
-      setMedications(updatedMedications);
+    const handleMedicationChange = (e) => {
+      setMedications({...medications, [e.target.name]: e.target.value});
     };
-  
-    const handleAddMedication = () => {
-      setMedications([...medications, { medicationName: '', dosage: '', frequency: '' }]);
+
+    const handleAllergyChange = (e) => {
+      setAllergy({...allergies, [e.target.name]: e.target.value});
+    };
+
+    const handlePrescriptionChange = (e) => {
+      setPrescriptions({...prescriptions, [e.target.name]: e.target.value});
     };
   
     const handleSubmit = (e) => {
       e.preventDefault();
-      console.log(patient, medications);
-      // submit the form data to API or data source
-    };
-    const FormSubmitButton = () => {
-      const [formSubmitted, setFormSubmitted] = useState(false);
-    
-      const handleSubmit = () => {
-        setFormSubmitted(true);
-      };
-    const handleReset = () => {
-      setPatient({
-        name: '',
-        doctor: '',
-        doctorType: '',
-        description: '',
-        medications: [{ medicationName: '', dosage: '', frequency: '' }],
-        allergies: '',
-        prescriptions: '',
-        notes: '',
-      });
-      setMedications([{ medicationName: '', dosage: '', frequency: '' }]);
-    };
-    
-  }
+    }
+
     return (
-      <div className="w-64 m-auto mt-10 p-5 rounded-lg shadow-lg bg-white">
+      <div className="w-[100%] m-auto mt-10 p-10 rounded-lg shadow-lg bg-white">
         <h1 className="text-2xl font-bold text-center">Patient Form</h1>
         <form onSubmit={handleSubmit}>
+          <div className="mt-5">
+            <label className="block font-bold mb-2">Patient Account Address:</label>
+            <input
+              type="text"
+              name="address"
+              value={patient.address}
+              onChange={handleChange}
+              className="w-full p-2 rounded-lg border border-gray-400"
+            />
+          </div>
           <div className="mt-5">
             <label className="block font-bold mb-2">Patient Name:</label>
             <input
@@ -96,6 +86,88 @@ const FormCard = () => {
               <option value="Dr. Patel">Neurology</option>
             </select>
           </div>
+
+          <div className="mt-5">
+            <label className="block font-bold mb-2">Medications:</label>
+            <div className='flex'>
+              <input
+                type="text"
+                name="name"
+                placeholder='Enter Name'
+                value={medications.name}
+                onChange={handleMedicationChange}
+                className="w-full p-2 rounded-lg border border-gray-400"
+              />
+              <input
+                type="text"
+                name="dosage"
+                placeholder='Enter Dosage'
+                value={medications.dosage}
+                onChange={handleMedicationChange}
+                className="w-full p-2 rounded-lg border border-gray-400"
+              />
+              <input
+                type="text"
+                name="frequency"
+                placeholder='Enter Frequency'
+                value={medications.frequency}
+                onChange={handleMedicationChange}
+                className="w-full p-2 rounded-lg border border-gray-400"
+              />
+            </div>
+          </div>
+
+          <div className="mt-5">
+            <label className="block font-bold mb-2">Allergies:</label>
+            <div className='flex'>
+              <input
+                type="text"
+                name="name"
+                placeholder='Enter Substance'
+                value={allergies.substance}
+                onChange={handleAllergyChange}
+                className="w-full p-2 rounded-lg border border-gray-400"
+              />
+              <input
+                type="text"
+                name="reaction"
+                placeholder='Enter Reaction'
+                value={allergies.reaction}
+                onChange={handleAllergyChange}
+                className="w-full p-2 rounded-lg border border-gray-400"
+              />
+            </div>
+          </div>
+
+          <div className="mt-5">
+            <label className="block font-bold mb-2">Medications:</label>
+            <div className='flex'>
+              <input
+                type="text"
+                name="name"
+                placeholder='Enter Name'
+                value={prescriptions.name}
+                onChange={handlePrescriptionChange}
+                className="w-full p-2 rounded-lg border border-gray-400"
+              />
+              <input
+                type="text"
+                name="dosage"
+                placeholder='Enter Dosage'
+                value={prescriptions.dosage}
+                onChange={handlePrescriptionChange}
+                className="w-full p-2 rounded-lg border border-gray-400"
+              />
+              <input
+                type="text"
+                name="frequency"
+                placeholder='Enter Frequency'
+                value={prescriptions.frequency}
+                onChange={handlePrescriptionChange}
+                className="w-full p-2 rounded-lg border border-gray-400"
+              />
+            </div>
+          </div>
         
           <div className="mt-5">
             <label className="block font-bold mb-2">Description:</label>
@@ -103,6 +175,17 @@ const FormCard = () => {
               rows="3"
               name="description"
               value={patient.description}
+              onChange={handleChange}
+              className="w-full p-2 rounded-lg border border-gray-400"
+            />
+          </div>
+
+          <div className="mt-5">
+            <label className="block font-bold mb-2">Notes:</label>
+            <textarea
+              rows="3"
+              name="notes"
+              value={patient.notes}
               onChange={handleChange}
               className="w-full p-2 rounded-lg border border-gray-400"
             />
