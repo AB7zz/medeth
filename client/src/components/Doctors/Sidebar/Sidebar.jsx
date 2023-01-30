@@ -1,15 +1,16 @@
 import React from 'react'
 import './style.css'
+import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
   return (
     <div className='h-screen bg-purple-700 w-[15%]'>
       <img src="/src/assets/logo.png" alt="" />
-      <div className='flex flex-col justify-center sb-content'>
-        <h3 className='text-white'>Home</h3>
-        <h3 className='text-white'>Upload</h3>
-        <h3 className='text-white'>Appointments</h3>
-        <h3 className='text-white'>Settings</h3>
+      <div className='flex flex-col justify-center'>
+        <Link to='/doctor/home' className='sb-content-link text-white'>Home</Link>
+        <Link to='/doctor/upload' className='sb-content-link text-white'>Upload</Link>
+        <Link to='/doctor/appointments' className='sb-content-link text-white'>Appointments</Link>
+        <Link to='/doctor/settings' className='sb-content-link text-white'>Settings</Link>
       </div>
     </div>
   )
