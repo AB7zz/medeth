@@ -14,9 +14,9 @@ setAppointments(updatedAppointments);
 }
 
 return (
-<div className="w-1/4 m-3 rounded-lg overflow-hidden shadow-lg">
+<div className="w-1/4 m-3 rounded-lg overflow-hidden shadow-lg bg-white">
 <div className="px-6 py-2 bg-red-500 text-white">
-<h1 className="text-2xl font-bold">New Appointments</h1>
+<h1 className="text-2xl font-bold">Upcoming Patients</h1>
 </div>
 <ul className="mt-2">
 {appointments.map((appointment, index) => (

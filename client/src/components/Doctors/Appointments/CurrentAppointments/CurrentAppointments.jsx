@@ -20,8 +20,8 @@ const CurrentAppointments = () => {
   };
 
   return (
-    <div className="w-1/2 m-3 rounded-lg overflow-hidden shadow-lg">
-      <div className="px-6 py-2 bg-red-500 text-white">
+    <div className="w-1/4 m-3 rounded-lg overflow-hidden shadow-lg bg-white">
+      <div className="px-6 py-2 bg-blue-500 text-white">
         <h1 className="text-2xl font-bold">Current Appointments</h1>
         <div className="text-sm mt-2">Current time: {new Date().toLocaleTimeString()}</div>
       </div>

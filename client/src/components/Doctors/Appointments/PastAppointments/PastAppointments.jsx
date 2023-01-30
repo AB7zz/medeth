@@ -18,7 +18,7 @@ const PastAppointments = () => {
   }, []);
 
   return (
-    <div className="w-1/4 m-3 rounded-lg overflow-hidden shadow-lg">
+    <div className="w-1/4 m-3 rounded-lg overflow-hidden shadow-lg bg-white">
       <div className="px-6 py-2 bg-green-500 text-white">
         <h1 className="text-2xl font-bold">Past Patients</h1>
       </div>

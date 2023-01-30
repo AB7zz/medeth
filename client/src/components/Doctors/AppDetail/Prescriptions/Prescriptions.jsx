@@ -23,7 +23,7 @@ const Prescriptions = ({appointment}) => {
           ))}
         </ul>
       </div>
-      <div className="bg-green-500 rounded-t-lg text-center py-2 text-white text-2xl font-bold">Notess</div>
+      <div className="bg-green-500 rounded-t-lg text-center py-2 text-white text-2xl font-bold">Notes</div>
       <div className="p-5">
         <ul>
           {appointment.notes}
