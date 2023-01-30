@@ -34,16 +34,8 @@ const PatientDetails = () => {
     <Medications style={{ flex: 1 }} />
     <PrevAppointments style={{ flex: 1 }} />
     <PatientBio style={{flex:1}} />
-  </div>
-    <div className='flex-col w-[100%]'>
-      <div className='p-3 flex'>
-        <input onChange={e => setName(e.target.value)} type="text" placeholder='Search Name' className='bg-gray-100 p-4 text-[#6C6C6C] w-[100%]' />
-        <button className='bg-blue-500 text-white p-4' onClick={searchName} >Search</button>
-      </div>
-      <div className='flex justify-around'>
-        {patient ? (<PatientDetail patient={patient} />) : (<p>adsfas</p>)}
-      </div>
     </div>
+
   )
 }
 
