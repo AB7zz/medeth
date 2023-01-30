@@ -1,4 +1,8 @@
 import React from 'react'
+import Sidebar from '../Sidebar/Sidebar'
+import Medications from './Medications/Medications'
+import PatientBio from './PatientBio/PatientBio'
+import PrevAppointments from './PrevAppointments/PrevAppointments'
 import data from './Patients.json'
 
 export const PatientDetail = ({patient}) => {
@@ -25,6 +29,12 @@ const PatientDetails = () => {
   }
 
   return (
+    <div style={{ display: 'flex'}}>
+    <Sidebar style={{ flex: 1 }} />
+    <Medications style={{ flex: 1 }} />
+    <PrevAppointments style={{ flex: 1 }} />
+    <PatientBio style={{flex:1}} />
+  </div>
     <div className='flex-col w-[100%]'>
       <div className='p-3 flex'>
         <input onChange={e => setName(e.target.value)} type="text" placeholder='Search Name' className='bg-gray-100 p-4 text-[#6C6C6C] w-[100%]' />
