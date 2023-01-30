@@ -1,4 +1,8 @@
 import React from 'react'
+import Sidebar from '../Sidebar/Sidebar'
+import Medications from './Medications/Medications'
+import PatientBio from './PatientBio/PatientBio'
+import PrevAppointments from './PrevAppointments/PrevAppointments'
 import data from './Patients.json'
 
 export const PatientDetail = ({patient}) => {
@@ -31,7 +35,16 @@ const PatientDetails = () => {
         <button className='bg-blue-500 text-white p-4' onClick={searchName} >Search</button>
       </div>
       <div className='flex justify-around'>
-        {patient ? (<PatientDetail patient={patient} />) : (<p>adsfas</p>)}
+        
+        {patient ? (
+          <>
+            <Medications patient={patient} style={{ flex: 1 }} />
+            <PrevAppointments patient={patient} style={{ flex: 1 }} />
+            <PatientBio patient={patient} style={{flex:1}} />
+          </>
+        ) : (
+          <p>adsfas</p>
+        )}
       </div>
     </div>
   )
