@@ -14,7 +14,7 @@ const Login = () => {
           </button>
           :
           <button className="bg-indigo-500 text-white p-2 rounded-lg hover:bg-indigo-600" onClick={web3Handler}>
-            Login
+            Sign in
           </button>
         }
       </div>
