@@ -33,7 +33,7 @@ const PatientDetails = () => {
       <div className='flex justify-around'>
         {patient ? (<PatientDetail patient={patient} />) : (<p>adsfas</p>)}
       </div>
-    <div>
+    </div>
   )
 }
 
