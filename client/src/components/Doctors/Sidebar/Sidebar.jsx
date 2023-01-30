@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
   return (
-    <div className='h-screen bg-purple-700 w-[15%]'>
+    <div className='bg-purple-700 w-[15%]'>
       <img src="/src/assets/logo.png" alt="" />
       <div className='flex flex-col justify-center'>
         <Link to='/doctor/home' className='sb-content-link text-white'>Home</Link>
